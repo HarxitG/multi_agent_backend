@@ -1,9 +1,9 @@
-# Python
+# Byte-compiled / cached files
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.db
+*.pyc
 
 # Virtual environments
 venv/
@@ -20,6 +20,3 @@ env/
 
 # Logs
 *.log
-
-# Byte-compiled files
-*.pyc
