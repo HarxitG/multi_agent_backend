@@ -4,7 +4,6 @@ from agents.dashboard_agent import DashboardAgent
 
 router = APIRouter()
 
-# Instantiate agents
 support_agent = SupportAgent()
 dashboard_agent = DashboardAgent()
 
