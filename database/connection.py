@@ -6,8 +6,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def get_db():
-    # Get the URI from .env, fallback to localhost for development
-    uri = os.getenv("MONGO_URI", "mongodb://localhost:27017")
+    # Get MongoDB URI from environment variables
+    uri = os.getenv("MONGO_URI")
+    if not uri:
+        raise Exception("MONGO_URI not found in environment variables.")
+    
     client = MongoClient(uri)
-    db = client["fitness_center"]
-    return db
+    return client["fitness_center"]

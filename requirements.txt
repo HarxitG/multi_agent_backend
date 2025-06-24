@@ -2,7 +2,6 @@ fastapi
 uvicorn
 pymongo
 python-dotenv
-pydantic
 crewai
 langchain
 openai
