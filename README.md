@@ -93,11 +93,15 @@ Open in browser: http://127.0.0.1:8000/docs
 ## API Endpoints
 Endpoint Query Example Description
 
-/support What classes are available this week? Returns upcoming class schedule
-/support Has order #12345 been paid? Returns payment status
-/support Create an order for Yoga Beginner for client Priya Sharma Simulates order creation
-/dashboard How much revenue did we generate this month? Returns total revenue
-/dashboard What is the attendance percentage for Yoga Beginner? Returns attendance percentage
+/support - What classes are available this week? Returns upcoming class schedule
+
+/support - Has order #12345 been paid? Returns payment status
+
+/support - Create an order for Yoga Beginner for client Priya Sharma Simulates order creation
+
+/dashboard - How much revenue did we generate this month? Returns total revenue
+
+/dashboard - What is the attendance percentage for Yoga Beginner? Returns attendance percentage
 
 # Tech Stack
 
