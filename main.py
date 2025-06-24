@@ -1,9 +1,13 @@
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 from api.handlers import router
 
 app = FastAPI()
+
+# Include your API routes
 app.include_router(router)
 
-@app.get("/")  # <-- Add this
+# Root route redirects to Swagger docs
+@app.get("/")
 def root():
-    return {"message": "API is running"}
+    return RedirectResponse(url="/docs")
